@@ -31,7 +31,8 @@ public class quicksort {
                 lower--;
             }
         }
-        quick(arr, s, lower);
+        quick(arr, s, lower);//the division is now between the 0 to pivot and pivot index to last since pivot is in its place! 
+        //after loop lower will be the last element before pivot and will uperr first or second after pivot
         quick(arr, upper, e);
     }
 }
